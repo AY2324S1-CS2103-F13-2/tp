@@ -161,6 +161,19 @@ Examples:
 - `list` followed by `claim 1 $/-500` deducts $50 from the entitlement fund of the 1st employee in the list.
 - `list` followed by `claim 2 $/+60` adds $60 to the entitlement fund of the 2nd employee in the list.
 
+### Listing Employees of a Department: department
+
+List all employees in the specified department.
+
+Format:  `department d/DEPARTMENT`
+
+- The `DEPARTMENT` refers to the department name tagged to the employees
+
+Examples: 
+- `department d/Human Resource` returns a list of employees in the Human Resource department.
+- `department d/Marketing` returns a list of employees in the Marketing department.
+
+
 ### Clearing all entries : `clear`
 
 Clears all entries from the address book.
@@ -217,4 +230,5 @@ _Details coming soon ..._
 | **Find**   | `find KEYWORD [MORE_KEYWORDS]`<br> e.g., `find James Jake`                                                                                                            |
 | **List**   | `list`                                                                                                                                                                |
 | **Claim**   | `claim INDEX $/CLAIM_AMOUNT` <br> e.g., `claim 1 $/-500`                                                                                                                                                                |
+| **Department**   | `department d/DEPARTMENT` <br> e.g., `department d/Human Resource`                                                                                                                                                                |
 | **Help**   | `help`                                                                                                                                                                |
