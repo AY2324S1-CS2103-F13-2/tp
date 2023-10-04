@@ -202,9 +202,7 @@ Format:  `birthday [m/MONTH]`
 - If there is no birthday in the month provided or the birthday is past the current date in the same month, return **No upcoming birthdays**
 
 Examples: 
-- `birthday` followed by `10` displays all employees who have their birthday in the month of October
-
-
+- `birthday` followed by `10` displays all employees who have their birthday in the month of October.
 
 ### Saving the data
 
