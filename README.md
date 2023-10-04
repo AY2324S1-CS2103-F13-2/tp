@@ -17,3 +17,5 @@
 * It is named `HR Insight` because it provides HR employees an extensive insight into an organisation. 
 * For the detailed documentation of this project, see the **[HR Insight Product Website](https://ay2324s1-cs2103-f13-2.github.io/tp/)**.
 * This project is a **part of the CS2103** course structure.
+
+For testing
