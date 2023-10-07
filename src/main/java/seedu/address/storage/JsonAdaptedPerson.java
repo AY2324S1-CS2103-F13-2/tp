@@ -29,6 +29,7 @@ class JsonAdaptedPerson {
     private final String claimBudget;
     private final String department;
     private final String dob;
+    private final String remark;
 
     /**
      * Constructs a {@code JsonAdaptedPerson} with the given person details.
@@ -37,7 +38,7 @@ class JsonAdaptedPerson {
     public JsonAdaptedPerson(@JsonProperty("name") String name, @JsonProperty("phone") String phone,
             @JsonProperty("email") String email, @JsonProperty("address") String address,
             @JsonProperty("salary") String salary, @JsonProperty("claimBudget") String claimBudget,
-            @JsonProperty("department") String department, @JsonProperty("dob") String dob) {
+            @JsonProperty("department") String department, @JsonProperty("dob") String dob, @JsonProperty("remark") String remark) {
         this.name = name;
         this.phone = phone;
         this.email = email;
@@ -46,6 +47,7 @@ class JsonAdaptedPerson {
         this.claimBudget = claimBudget;
         this.department = department;
         this.dob = dob;
+        this.remark = remark;
     }
 
     /**
@@ -60,6 +62,7 @@ class JsonAdaptedPerson {
         claimBudget = source.getClaimBudget().amount;
         department = source.getDepartment().department;
         dob = source.getDob().dob;
+        remark = source.getRemark().remark;
     }
 
     /**

@@ -8,10 +8,12 @@ import static java.util.Objects.requireNonNull;
  */
 public class Remark {
     public final String value;
+    public String remark;
 
     public Remark(String remark) {
         requireNonNull(remark);
         value = remark;
+        this.remark = remark;
     }
 
     @Override
