@@ -9,6 +9,7 @@ import static seedu.address.logic.parser.CliSyntax.PREFIX_EMAIL;
 import static seedu.address.logic.parser.CliSyntax.PREFIX_NAME;
 import static seedu.address.logic.parser.CliSyntax.PREFIX_PHONE;
 import static seedu.address.logic.parser.CliSyntax.PREFIX_SALARY;
+import static seedu.address.logic.parser.CliSyntax.PREFIX_REMARK;
 import static seedu.address.model.Model.PREDICATE_SHOW_ALL_PERSONS;
 
 import java.util.List;
@@ -29,6 +30,7 @@ import seedu.address.model.person.Money;
 import seedu.address.model.person.Name;
 import seedu.address.model.person.Person;
 import seedu.address.model.person.Phone;
+import seedu.address.model.person.Remark;
 
 /**
  * Edits the details of an existing person in the address book.
@@ -108,9 +110,10 @@ public class EditCommand extends Command {
         Money updatedClaimBudget = editPersonDescriptor.getClaimBudget().orElse(personToEdit.getClaimBudget());
         Department updatedDepartment = editPersonDescriptor.getDepartment().orElse(personToEdit.getDepartment());
         Birthday updateDob = editPersonDescriptor.getDob().orElse(personToEdit.getDob());
+        Remark updatedRemark = personToEdit.getRemark(); // edit command does not allow editing remarks
 
         return new Person(updatedName, updatedPhone, updatedEmail, updatedAddress,
-                updatedSalary, updatedClaimBudget, updatedDepartment, updateDob);
+                updatedSalary, updatedClaimBudget, updatedDepartment, updateDob, updatedRemark);
     }
 
     @Override

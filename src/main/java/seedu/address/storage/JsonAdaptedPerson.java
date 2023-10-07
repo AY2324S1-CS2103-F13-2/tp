@@ -12,6 +12,7 @@ import seedu.address.model.person.Money;
 import seedu.address.model.person.Name;
 import seedu.address.model.person.Person;
 import seedu.address.model.person.Phone;
+import seedu.address.model.person.Remark;
 
 /**
  * Jackson-friendly version of {@link Person}.
@@ -133,8 +134,10 @@ class JsonAdaptedPerson {
         }
         final Birthday modelDob = new Birthday(dob);
 
+        final Remark modelRemark = new Remark("");
+
         return new Person(modelName, modelPhone, modelEmail, modelAddress, modelSalary,
-                modelClaimBudget, modelDepartment, modelDob);
+                modelClaimBudget, modelDepartment, modelDob, modelRemark);
     }
 
 }

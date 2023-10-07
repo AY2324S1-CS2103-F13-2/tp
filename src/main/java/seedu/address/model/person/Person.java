@@ -27,14 +27,15 @@ public class Person {
     private final Money claimBudget;
     private final Department department;
     private final Birthday dob;
+    private final Remark remark;
     private final Set<Tag> tags = new HashSet<>();
 
     /**
      * Every field must be present and not null.
      */
     public Person(Name name, Phone phone, Email email, Address address,
-            Money salary, Money claimBudget, Department dep, Birthday dob) {
-        requireAllNonNull(name, phone, email, address, salary, claimBudget, dep, dob);
+            Money salary, Money claimBudget, Department dep, Birthday dob, Remark remark) {
+        requireAllNonNull(name, phone, email, address, salary, claimBudget, dep, dob, remark);
         this.name = name;
         this.phone = phone;
         this.email = email;
@@ -43,6 +44,7 @@ public class Person {
         this.claimBudget = claimBudget;
         this.department = dep;
         this.dob = dob;
+        this.remark = remark;
     }
 
     public Name getName() {
@@ -75,6 +77,10 @@ public class Person {
 
     public Birthday getDob() {
         return dob;
+    }
+
+    public Remark getRemark() {
+        return remark;
     }
 
     /**
@@ -137,6 +143,7 @@ public class Person {
                 .add("claimBudget", claimBudget)
                 .add("department", department)
                 .add("dob", dob)
+                .add("remark", remark)
                 .toString();
     }
 

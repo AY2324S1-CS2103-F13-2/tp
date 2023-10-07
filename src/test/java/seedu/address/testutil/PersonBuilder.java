@@ -8,6 +8,7 @@ import seedu.address.model.person.Money;
 import seedu.address.model.person.Name;
 import seedu.address.model.person.Person;
 import seedu.address.model.person.Phone;
+import seedu.address.model.person.Remark;
 
 /**
  * A utility class to help with building Person objects.
@@ -22,6 +23,7 @@ public class PersonBuilder {
     public static final String DEFAULT_BUDGET = "2500";
     public static final String DEFAULT_DEPARTMENT = "Engineering";
     public static final String DEFAULT_DOB = "2000-01-01";
+    public static final String DEFAULT_REMARK = "";
 
     private Name name;
     private Phone phone;
@@ -31,6 +33,7 @@ public class PersonBuilder {
     private Money claimBudget;
     private Department department;
     private Birthday dob;
+    private Remark remark;
 
     /**
      * Creates a {@code PersonBuilder} with the default details.
@@ -44,6 +47,7 @@ public class PersonBuilder {
         claimBudget = new Money(DEFAULT_BUDGET);
         department = new Department(DEFAULT_DEPARTMENT);
         dob = new Birthday(DEFAULT_DOB);
+        remark = new Remark(DEFAULT_REMARK);
     }
 
     /**
@@ -58,6 +62,7 @@ public class PersonBuilder {
         claimBudget = personToCopy.getClaimBudget();
         department = personToCopy.getDepartment();
         dob = personToCopy.getDob();
+        remark = personToCopy.getRemark();
     }
 
     /**
@@ -131,8 +136,16 @@ public class PersonBuilder {
         return this;
     }
 
+    /**
+     * Sets the {@code Remark} of the {@code Person} that we are building.
+     */
+    public PersonBuilder withRemark(String remark) {
+        this.remark = new Remark(remark);
+        return this;
+    }
+
     public Person build() {
-        return new Person(name, phone, email, address, salary, claimBudget, department, dob);
+        return new Person(name, phone, email, address, salary, claimBudget, department, dob, remark);
     }
 
 }

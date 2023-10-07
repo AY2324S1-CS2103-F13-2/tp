@@ -22,6 +22,7 @@ import seedu.address.model.person.Money;
 import seedu.address.model.person.Name;
 import seedu.address.model.person.Person;
 import seedu.address.model.person.Phone;
+import seedu.address.model.person.Remark;
 
 /**
  * Parses input arguments and creates a new AddCommand object
@@ -54,8 +55,9 @@ public class AddCommandParser implements Parser<AddCommand> {
         Money claimBudget = ParserUtil.parseMoney(argMultimap.getValue(PREFIX_CLAIM_BUDGET).get());
         Department department = ParserUtil.parseDepartment(argMultimap.getValue(PREFIX_DEPARTMENT).get());
         Birthday dob = ParserUtil.parseDob(argMultimap.getValue(PREFIX_DOB).get());
+        Remark remark = new Remark(""); // add command does not support adding remarks
 
-        Person person = new Person(name, phone, email, address, salary, claimBudget, department, dob);
+        Person person = new Person(name, phone, email, address, salary, claimBudget, department, dob, remark);
 
         return new AddCommand(person);
     }
