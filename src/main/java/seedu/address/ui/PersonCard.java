@@ -43,6 +43,8 @@ public class PersonCard extends UiPart<Region> {
     private Label department;
     @FXML
     private Label dob;
+    @FXML
+    private Label remark;
 
     /**
      * Creates a {@code PersonCode} with the given {@code Person} and index to display.
