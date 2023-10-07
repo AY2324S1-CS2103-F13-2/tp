@@ -61,5 +61,6 @@ public class PersonCard extends UiPart<Region> {
         claimBudget.setText("Claim budget: " + person.getClaimBudget().toString());
         department.setText("Department: " + person.getDepartment().toString());
         dob.setText("DOB: " + person.getDob().toString());
+        remark.setText(person.getRemark().value);
     }
 }
