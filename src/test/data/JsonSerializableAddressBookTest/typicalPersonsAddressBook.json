@@ -4,7 +4,7 @@
     {
       "name": "Alice Pauline",
       "phone": "94351253",
-      "email": "alice@example.com",
+      "email": "alice@gmail.com",
       "address": "123, Jurong West Ave 6, #08-111",
       "salary": "10000",
       "claimBudget": "5000",
@@ -15,7 +15,7 @@
     {
       "name": "Benson Meier",
       "phone": "98765432",
-      "email": "johnd@example.com",
+      "email": "johnd@gmail.com",
       "address": "311, Clementi Ave 2, #02-25",
       "salary": "100",
       "claimBudget": "5",
@@ -26,7 +26,7 @@
     {
       "name": "Carl Kurz",
       "phone": "95352563",
-      "email": "heinz@example.com",
+      "email": "heinz@gmail.com",
       "address": "wall street",
       "salary": "1000000000000",
       "claimBudget": "500000",
@@ -37,7 +37,7 @@
     {
       "name": "Daniel Meier",
       "phone": "87652533",
-      "email": "cornelia@example.com",
+      "email": "cornelia@gmail.com",
       "address": "10th street",
       "salary": "23232323232",
       "claimBudget": "19191919",
@@ -48,7 +48,7 @@
     {
       "name": "Elle Meyer",
       "phone": "9482224",
-      "email": "werner@example.com",
+      "email": "werner@gmail.com",
       "address": "michegan ave",
       "salary": "3000",
       "claimBudget": "200",
@@ -59,7 +59,7 @@
     {
       "name": "Fiona Kunz",
       "phone": "9482427",
-      "email": "lydia@example.com",
+      "email": "lydia@gmail.com",
       "address": "little tokyo",
       "salary": "100000",
       "claimBudget": "1",
@@ -70,7 +70,7 @@
     {
       "name": "George Best",
       "phone": "9482442",
-      "email": "anna@example.com",
+      "email": "anna@gmail.com",
       "address": "4th street",
       "salary": "10000",
       "claimBudget": "5000",
